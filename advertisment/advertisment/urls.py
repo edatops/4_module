@@ -38,7 +38,7 @@ def jls_extract_def():
 
 
 urlpatterns = [
-
+    path('my_auth', include('app_auth.urls')),
     path('admin/', admin.site.urls),
     path('', include('app_advertisment.urls')),
     path('lesson_4', include('app_lesson_4.urls'))
